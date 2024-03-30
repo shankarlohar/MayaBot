@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mayabot"
+version = "0.0.0"
+description = ""
+authors = ["shankarlohar <shankarloharmail@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytelegrambotapi = "^4.16.1"
+
+
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.1"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
