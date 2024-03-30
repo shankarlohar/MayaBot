@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mayabot"
-version = "0.0.0"
+version = "0.1.0"
 description = ""
 authors = ["shankarlohar <shankarloharmail@gmail.com>"]
 readme = "README.md"
