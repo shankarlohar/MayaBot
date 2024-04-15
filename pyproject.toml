@@ -12,6 +12,7 @@ python = "^3.10.0"
 pytelegrambotapi = "^4.16.1"
 pytz = "^2024.1"
 gspread = "^6.1.0"
+datetime = "^5.5"
 
 
 
