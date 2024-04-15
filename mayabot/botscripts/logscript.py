@@ -15,7 +15,7 @@ template_worksheet = sheets.get_worksheet(0)
 
 def logThis(task: str):
     try:
-        utc_now = datetime.datetime.now(datetime.UTC)
+        utc_now = datetime.datetime.utcnow()
         local_now = utc_now.astimezone(pytz.timezone('Asia/Kolkata'))
         date_str = local_now.strftime("%d/%m/%Y")
         time_str = local_now.strftime("%H:%M:%S")
