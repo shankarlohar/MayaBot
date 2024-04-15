@@ -18,4 +18,6 @@ def read_all(message):
         bot.reply_to(message, logMessage)
 
 
-bot.infinity_polling()
+if __name__ == '__main__':
+    print("Bot Online")
+    bot.infinity_polling()
