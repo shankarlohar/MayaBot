@@ -14,7 +14,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 def read_all(message):
     if message.text.startswith(('.', 'log', 'Log')):
         print(f"incomming->", end=' ')
-        logMessage = logscript.logThis(message.text[3:])
+        logMessage = logscript.logThis(message.text.partition(' ')(2))
         print(logMessage)
         bot.reply_to(message, logMessage)
 
