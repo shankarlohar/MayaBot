@@ -201,5 +201,10 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [metadata]
 lock-version = "2.0"
+<<<<<<< HEAD
 python-versions = "^3.10"
 content-hash = "c0fe4086c8f38cd45b5388d74af057b982f85a7c30a1238b7f07122934c15610"
+=======
+python-versions = "^3.10.0"
+content-hash = "ebbff00469f4d38fa078781c870fb3cbf89996b10ec3cd0c4705c7b608bd9f27"
+>>>>>>> c02ecf1 (feat(mayabot/botscripts): added two scripts one for wakeup one for logs)
