@@ -1,5 +1,3 @@
-import pytz
-import datetime
 import gspread
 import os
 from dotenv import load_dotenv
@@ -13,15 +11,12 @@ sheets = gc.open_by_key(os.environ.get('G_LOG_ADDRESS'))
 template_worksheet = sheets.get_worksheet(0)
 
 
-def logThis(task: str):
+def logThis(timestamp: str, task: str):
     try:
-        utc_now = datetime.datetime.utcnow()
-        local_now = utc_now.astimezone(pytz.timezone('Asia/Kolkata'))
-        date_str = local_now.strftime("%d/%m/%Y")
-        time_str = local_now.strftime("%H:%M:%S")
+        date_str, time_str = timestamp.split(' ')
         new_row = [date_str, time_str, task]
         template_worksheet.append_row(new_row)
-        return "Done"
+        return "Logged"
 
     except Exception as e:
         return e
