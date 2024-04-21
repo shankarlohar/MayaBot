@@ -13,10 +13,11 @@ template_worksheet = sheets.get_worksheet(0)
 
 def logThis(timestamp: str, task: str):
     try:
-        date_str, time_str = timestamp.split(' ')
-        new_row = [date_str, time_str, task]
+        date, time = timestamp.split(' ')
+        category, _, work = task.partition(' ')
+        new_row = [date, time, category.upper(), work]
         template_worksheet.append_row(new_row)
-        return "Logged"
+        return f"{category} is Logged"
 
     except Exception as e:
         return e
