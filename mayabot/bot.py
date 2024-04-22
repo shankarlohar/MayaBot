@@ -14,7 +14,7 @@ bot = TeleBot(BOT_TOKEN)
 
 
 milestone_list = [
-    "Thought", "GATE→IITB", "Understanding Business and Finance", "Bodyweight Fitness Progressions", "Exploring Singing and Music", "Adapting to Kamasutra", "Todo", "To Fix"
+    "Thought", "GATE→IITB", "Understanding Business and Finance", "Bodyweight Fitness Progressions", "Exploring Singing and Music", "Adapting to Kamasutra", "Todo", "To Fix", "Chore"
 ]
 
 
